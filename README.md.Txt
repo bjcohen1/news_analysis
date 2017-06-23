@@ -1,6 +1,6 @@
 README for News Log Analysis for Full Stack Web Developer Nanodegree
 
-Latest Version: 5/17/2017
+Latest Version: 6/23/2017
 
 The purpose of this program is to run queries on a database of requests to a news website--particular goals of this program are to identify the
 3 most popular news articles (including the number of views for each), the total number of views each of the contributing authors have had on his/her stories,
@@ -13,6 +13,10 @@ news_queries.py--contains the python code necessary to retrieve the answers to t
 The database setup contains 3 base tables. The articles table contains all of the information about the articles available on the site including author (by author id),
 title, slug, lead, body, time, and id.  The authors table contains author information including name, bio, and id.  Finally the log table contains all of the access
 data for the website including the path of the url accessed, ip address requesting, method, status, time, and id of the request.
+
+This .sql file associated with the databse is not included in this repository because the
+data set is too large to be uploaded to github.  The database information was downloaded
+via a link provided by Udacity.
 
 Further, this project makes use of 3 views, which were generated with the following statements:
 
@@ -34,9 +38,11 @@ To run this program you will need to download Virtual Box and Vagrant to support
 needed to use this program.  Using git you can clone all of the necessary files for this program from Udacity via 
 http://github.com/udacity/fullstack-nanodegree-vm fullstack
 
-Once the above softwares are downloaded, start the virtual machine by typing vagrant up and log in to the virtual machine by typing vagrant ssh.
+Once the above softwares are downloaded, start the virtual machine by typing vagrant up
+and log in to the virtual machine by typing vagrant ssh.
 Type cd /vagrant and cd to 'News_Log to access the project folder.
-Run the python program named news_queries.py to connect to the database and retrieve the information outlined in the beginning of this document.
+Run the python program by typing python news_queries.py to connect to the database 
+and retrieve the information outlined in the beginning of this document.
 
 You can disconnect from the VM by typing ctrl + D and typing logout.
 

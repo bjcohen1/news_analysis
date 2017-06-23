@@ -27,13 +27,12 @@ def most_pop_art():
     first connects to the database, creates a cursor and runs the
     query stored in query via the excute command
 
-    this is followed by collecting the retrieved information as a tuple.  The database
-    is then changed by commit and the conncetion closed by .close()
+    this is followed by collecting the retrieved information as a tuple.
+    The database is then changed and the conncetion closed by .close()
 
     finally, the tuple of results is iterated over to print out the results
     in an easy to read manner
     '''
-
 
     db_connect, cursor = connect()
     query = ("SELECT articles.title, pathnum.num FROM articles, pathnum "
